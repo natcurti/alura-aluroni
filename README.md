@@ -30,3 +30,5 @@ npm start
 Neste projeto foi possível aprender a utilização prática de diversos hooks como useState, useEffect e useCallback. Além disso praticamos Typescript com a tipagem de diversas props e componentes. Adicionamos ícones através da lib react-icons e também usamos a lib classNames para facilitar a inclusão de classes com condicionais.
 
 ## 👉 Confira o projeto pelo link:
+
+https://alura-aluroni-blond.vercel.app/
