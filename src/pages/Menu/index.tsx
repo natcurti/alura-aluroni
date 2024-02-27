@@ -28,7 +28,7 @@ const Menu = () => {
           <Filters filter={filter} setFilter={setFilter} />
           <Select select={select} setSelect={setSelect} />
         </div>
-        <Items />
+        <Items search={search} filter={filter} select={select} />
       </section>
     </main>
   );
