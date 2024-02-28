@@ -3,6 +3,7 @@ import styles from "./Home.module.scss";
 import styleTheme from "styles/Theme.module.scss";
 import photoHome from "assets/nossa_casa.png";
 import { useNavigate } from "react-router-dom";
+import { MenuItem } from "types/MenuItem";
 
 const Home = () => {
   let recomendedItems = [...menuItems];
@@ -11,7 +12,7 @@ const Home = () => {
     .splice(0, 3);
   const navigate = useNavigate();
 
-  const redirectToDetails = (item: (typeof menuItems)[0]) => {
+  const redirectToDetails = (item: MenuItem) => {
     navigate(`/prato/${item.id}`, { state: { item } });
   };
 

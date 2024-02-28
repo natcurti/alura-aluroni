@@ -1,10 +1,8 @@
 import styles from "./Item.module.scss";
-import itemsJson from "data/menuItems.json";
 import classNames from "classnames";
+import { MenuItem } from "types/MenuItem";
 
-type IPropsItem = (typeof itemsJson)[0];
-
-const Item = (props: IPropsItem) => {
+const Item = (props: MenuItem) => {
   const { title, description, category, size, serving, price, photo } = props;
 
   return (
