@@ -1,5 +1,5 @@
 import styles from "./Item.module.scss";
-import itemsJson from "../items.json";
+import itemsJson from "data/menuItems.json";
 import classNames from "classnames";
 
 type IPropsItem = (typeof itemsJson)[0];

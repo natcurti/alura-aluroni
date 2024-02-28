@@ -2,7 +2,7 @@ import styles from "./Menu.module.scss";
 import { ReactComponent as Logo } from "assets/logo.svg";
 import Search from "./Search";
 import { useState } from "react";
-import Filters from "pages/Filters";
+import Filters from "./Filters";
 import Select from "./Select";
 import Items from "./Items";
 

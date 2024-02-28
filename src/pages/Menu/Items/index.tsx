@@ -1,12 +1,12 @@
 import { useCallback, useEffect, useState } from "react";
 import Item from "./Item";
-import itemsJson from "./items.json";
+import itemsJson from "data/menuItems.json";
 import styles from "./Items.module.scss";
 
 interface IPropsItems {
-  search: string;
-  filter: number | null;
-  select: string;
+ search: string;
+ filter: number | null;
+ select: string;
 }
 
 const Items = ({ search, filter, select }: IPropsItems) => {
@@ -31,14 +31,14 @@ const Items = ({ search, filter, select }: IPropsItems) => {
   const orderList = useCallback(
     (newList: typeof itemsJson) => {
       switch (select) {
-        case "porcao":
-          return newList.sort((a, b) => (a.size > b.size ? 1 : -1));
-        case "qtd_pessoas":
-          return newList.sort((a, b) => (a.serving > b.serving ? 1 : -1));
-        case "preco":
-          return newList.sort((a, b) => (a.price > b.price ? 1 : -1));
-        default:
-          return newList;
+      case "porcao":
+        return newList.sort((a, b) => (a.size > b.size ? 1 : -1));
+      case "qtd_pessoas":
+        return newList.sort((a, b) => (a.serving > b.serving ? 1 : -1));
+      case "preco":
+        return newList.sort((a, b) => (a.price > b.price ? 1 : -1));
+      default:
+        return newList;
       }
     },
     [select]
@@ -54,8 +54,8 @@ const Items = ({ search, filter, select }: IPropsItems) => {
   return (
     <div className={styles.items}>
       {list.map((item) => (
-        <div>
-          <Item key={item.id} {...item} />
+        <div key={item.id}>
+          <Item {...item} key={item.id} />
         </div>
       ))}
     </div>
