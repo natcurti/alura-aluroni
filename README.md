@@ -10,6 +10,7 @@ Para construção desse projeto foram utilizados:
 - TypeScript
 - CSS Modules
 - SASS
+- React Router Dom
 
 ## 🚀 Instalação
 
