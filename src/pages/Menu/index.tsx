@@ -14,7 +14,7 @@ const Menu = () => {
   const [select, setSelect] = useState("");
 
   return (
-    <section className={styleTheme.container}>
+    <section>
       <h3 className={styleTheme.title}>Cardápio</h3>
       <Search search={search} setSearch={setSearch} />
       <div className={styles.menu__filters}>

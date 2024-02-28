@@ -6,6 +6,7 @@ import Home from "pages/Home";
 import Menu from "pages/Menu";
 import NotFound from "pages/NotFound";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Dish from "pages/Dish";
 
 const AppRouter = () => {
   return (
@@ -19,6 +20,7 @@ const AppRouter = () => {
             <Route path="sobre" element={<About />} />
           </Route>
           <Route path="*" element={<NotFound />} />
+          <Route path="prato/:id" element={<Dish />} />
         </Routes>
         <Footer />
       </BrowserRouter>
