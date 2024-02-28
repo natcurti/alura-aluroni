@@ -1,0 +1,29 @@
+.aboutUs {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: justify;
+    p {
+      font-family: "Josefin Sans", sans-serif;
+    }
+  }
+}
+.pastaPhotos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  &__photo {
+    width: 400px;
+    img {
+      border-radius: 5px;
+      width: 100%;
+    }
+  }
+}

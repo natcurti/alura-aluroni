@@ -2,59 +2,6 @@
 @import "styles/breakpoints";
 
 .menu {
-  padding: 20px $padding-inline;
-  @media (max-width: $desktop_xsm) {
-    padding: 20px $padding-inline-mobile;
-  }
-  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-    padding: 20px $padding-inline-sm;
-  }
-  @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-    padding: 20px $padding-inline-md;
-  }
-}
-
-.header {
-  align-items: center;
-  background-image: url("/assets/Menu/header.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  height: 300px;
-  padding: 0px $padding-inline;
-  @media (max-width: $desktop_xsm) {
-    padding: 0px $padding-inline-mobile;
-  }
-  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-    padding: 0px $padding-inline-sm;
-  }
-  @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-    padding: 0px $padding-inline-md;
-  }
-  &__text {
-    color: white;
-    font-size: 5rem;
-    min-width: 400px;
-    width: 40%;
-  }
-}
-
-.menuContainer {
-  padding: 50px $padding-inline;
-  @media (max-width: $desktop_xsm) {
-    padding: 50px $padding-inline-mobile;
-  }
-  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-    padding: 50px $padding-inline-sm;
-  }
-  @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-    padding: 50px $padding-inline-md;
-  }
-  &__title {
-    color: $dark;
-    font-size: 3rem;
-    margin-bottom: 30px;
-  }
   &__filters {
     align-items: center;
     display: flex;

@@ -1,0 +1,38 @@
+@import "styles/variables";
+@import "styles/breakpoints";
+
+.menu {
+  padding: 20px $padding-inline;
+  display: flex;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  &__link {
+    padding: 0 20px;
+    a {
+      color: $dark;
+      cursor: pointer;
+      font-size: 24px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.2s ease;
+      &:hover {
+        color: $dark-gray;
+      }
+    }
+
+    @media (max-width: $desktop_xsm) {
+      padding: 20px $padding-inline-mobile;
+    }
+    @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+      padding: 20px $padding-inline-sm;
+    }
+    @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+      padding: 20px $padding-inline-md;
+    }
+  }
+}
