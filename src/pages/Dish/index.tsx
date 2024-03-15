@@ -1,9 +1,11 @@
 import styles from "./Dish.module.scss";
 import { Route, Routes, useNavigate, useParams } from "react-router-dom";
 import menuItems from "data/menuItems.json";
-import Tags from "components/Tags";
-import NotFound from "pages/NotFound";
-import DefaultPage from "components/DefaultPage";
+import { lazy } from "react";
+
+const NotFound = lazy(() => import("pages/NotFound"));
+const Tags = lazy(() => import("components/Tags"));
+const DefaultPage = lazy(() => import("components/DefaultPage"));
 
 const Dish = () => {
   const { id } = useParams();

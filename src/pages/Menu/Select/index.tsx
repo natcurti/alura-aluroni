@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 import styles from "./Select.module.scss";
 import options from "./options.json";
 import classNames from "classnames";
@@ -50,4 +50,4 @@ const Select = ({ select, setSelect }: ISelect) => {
   );
 };
 
-export default Select;
+export default memo(Select);

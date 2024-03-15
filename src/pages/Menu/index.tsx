@@ -1,6 +1,6 @@
 import styles from "./Menu.module.scss";
 import Search from "./Search";
-import { useState } from "react";
+import { memo, useState } from "react";
 import Filters from "./Filters";
 import Select from "./Select";
 import Items from "./Items";
@@ -26,4 +26,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default memo(Menu);

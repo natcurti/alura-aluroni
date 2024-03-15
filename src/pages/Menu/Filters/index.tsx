@@ -1,3 +1,4 @@
+import { memo } from "react";
 import filters from "./filters.json";
 import styles from "./Filters.module.scss";
 import classNames from "classnames";
@@ -35,4 +36,4 @@ const Filters = ({ filter, setFilter }: IFilters) => {
   );
 };
 
-export default Filters;
+export default memo(Filters);
